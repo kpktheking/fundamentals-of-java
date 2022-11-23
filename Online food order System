@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class Project
+{
+    public static void main(String args[]){
+    Scanner sc= new Scanner(System.in);
+    int a;
+    do {
+    System.out.println("  ===============================  ");
+    System.out.println("     Welcome to B.TECH Dhaba ");
+    System.out.println("1.B.tech Biryani      Rs:150");
+    System.out.println("2.Compiler Thundoori  RS:500");
+    System.out.println("3.Chicken JAVA        Rs:200");
+    System.out.println("4.Mouse Mutton        RS:450");
+    System.out.println("5.Computer kabbab     RS:250");
+    System.out.println("Enter 6 to exit");
+    System.out.println("  ===============================  ");
+    System.out.println("Enter your order number:" );
+         a=sc.nextInt();
+         int d=0;
+    switch(a){
+        case 1:
+            System.out.println("Enter the quantity?:");
+             int b=sc.nextInt();
+             int c2=b*150;
+             d=d+c2;
+             System.out.println("B.tech Biryani order amount is"+" "+c2);
+             break;
+         case 2:
+            System.out.println("Enter the quantity?:");
+             int b1=sc.nextInt();
+             int c1=b1*500;
+             d=d+c1;
+             System.out.println("Compiler Thundoori order amount is"+" "+c1);
+             break;
+         case 3:
+            System.out.println("Enter the quantity?:");
+             int b2=sc.nextInt();
+             int c3=b2*200;
+             d=d+c3;
+             System.out.println("Chicken JAVA order amount is"+" "+c3);
+             break;
+         case 4:
+            System.out.println("Enter the quantity?:");
+             int b3=sc.nextInt();
+             int c4=b3*450;
+             d=d+c4;
+             System.out.println("Mouse Mutton order amount is"+" "+c4);
+             break;
+         case 5:
+            System.out.println("Enter the quantity?:");
+             int b4=sc.nextInt();
+             int c5=b4*250;
+             d=d+c5;
+             System.out.println("Computer kabbab order amount is"+" "+c5);
+             break;
+        case 6:
+            System.out.println("THANK YOU");
+            break;
+    }
+    } while(a!=6);
+    System.out.println("Enter your adress:");
+    
+    
+    
+}
+}
