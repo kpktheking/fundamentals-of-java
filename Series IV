@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Series4
+{
+   
+    public static void main(String [] args)
+    {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        double result =0.5;
+        double c;
+        System.out.print(result);
+        for (int i = 1; i <=n-1; i++) 
+        {
+            result=result*3; 
+            System.out.print(" "+result);
+            c=result;
+        } 
+    }
+    }
