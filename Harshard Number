@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Harshard
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        int b,c,d;
+        c=0;
+        int a= sc.nextInt();
+        for(int i=0;i<count(a);i++) {
+            b=a%10;
+            c=c+b;
+            a=a/10;
+            
+        }
+        int e=a/c;
+        if(e==1) {
+            System.out.println("Harshad Number");
+        }
+        else {
+            System.out.println("Not Harshad Number");
+        }
+      
+    }
+    static int count(int num){
+          int z= 0;
+        while (num != 0) {
+            num=num/10;
+            ++z;
+        }
+        return z;
+    }
+}
