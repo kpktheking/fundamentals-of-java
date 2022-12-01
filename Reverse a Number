@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Reverse
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        int b= sc.nextInt();
+        int a;
+        int c=count(b);
+        for(int i=0;i<c;i++) {
+            a=b%10;
+         System.out.printf("%d",a);
+           b=b/10;
+        }
+        }
+          static int count(int num){
+          int z= 0;
+        while (num != 0) {
+            num=num/10;
+            ++z;
+        }
+        return z;
+    }
+    }
