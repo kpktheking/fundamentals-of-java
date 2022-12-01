@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Vowcons
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        char a= sc.next().charAt(0);
+        if(a=='i'||a=='e'||a=='a'||a=='o'||a=='u'){
+            System.out.println("Vowel");
+        }
+        else if(a=='b'||a=='c'||a=='d'||a=='f'||a=='g'||a=='h'||a=='j'||a=='k'||a=='l'||a=='m'||a=='n'||a=='w'||a=='p'||a=='q'||a=='r'||a=='s'||a=='t'||a=='x'||a=='v'||a=='y'||a=='z'){
+            System.out.println("Consonant");
+        }
+        else{
+            System.out.println("Not an alphabet");
+        }
+        
+    }
+}
