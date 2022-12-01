@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Fence
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        int l= sc.nextInt();
+        int b= sc.nextInt();
+        int a=2*(l+b);
+        int c=l*b;
+        System.out.printf("Required length is %d m\n",a);
+        System.out.printf("Required quantity of carpet is %d sqm\n",c);
+    }
+}
